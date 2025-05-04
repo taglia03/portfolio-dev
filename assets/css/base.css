@@ -1,0 +1,134 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/*===== VARIABILI CSS (GLOBAL SCOPE) =====*/
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+
+    /* Colori */
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    --body-color: #f4f4f4;
+    --text-color: var(--second-color);
+    --text-color-light: #777;
+    --white-color: #fff;
+
+    /* Tipografia */
+    --body-font: "Poppins", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+
+    /* Margini */
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /* Z-index */
+    --z-back: -10;
+    --z-fixed: 100;
+}
+
+/*===== MEDIA QUERY PER SCHERMI PIÙ GRANDI (GLOBAL SCOPE) =====*/
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
+    }
+}
+
+/*===== BASE (GLOBAL SCOPE) =====*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0; /* Potrebbe essere gestito diversamente con un header fisso */
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra orizzontalmente gli elementi figli */
+    min-height: 100vh; /* Assicura che il body occupi almeno l'altezza della viewport */
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc; /* Stile predefinito per i punti */
+    padding-left: 20px; /* Spazio per i punti */
+}
+
+a {
+    text-decoration: none;
+    color: var(--first-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: hsl(var(--hue-color), 89%, 70%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+/*===== UTILITY CLASSES (GLOBAL SCOPE) =====*/
+.l-main { /* Classe per il contenuto principale */
+    overflow: hidden; /* Utile per contenere elementi flottanti o animazioni */
+}
+
+.section {
+    padding-top: 3rem; /* Un padding di base per le sezioni */
+    padding-bottom: 2rem;
+}
+
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+    gap: 1.5rem; /* Spazio standard tra gli elementi della griglia */
+}
+
+/*===== BUTTONS (GLOBAL SCOPE) =====*/
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 0.75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    cursor: pointer; /* Indica che l'elemento è interattivo */
+}
+
+.button:hover {
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}

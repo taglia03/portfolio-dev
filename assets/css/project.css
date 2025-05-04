@@ -1,0 +1,382 @@
+h1,
+h2 {
+    padding-bottom: 2rem;
+}
+
+img {
+    width: fit-content;
+}
+
+.project__title,
+.project__detail-title,
+.feature-title,
+.takeaways-title {
+    color: #333; /* Nero più tenue per i titoli */
+}
+
+.highlight,
+.key-benefit,
+.improvement-goal {
+    color: #007bff; /* Blu */
+    font-weight: bold;
+}
+
+.benefit,
+.benefit-inline,
+.value-emphasis {
+    color: #28a745; /* Verde */
+    font-style: italic;
+}
+
+.tech-label {
+    font-weight: bold;
+    color: #333; /* Nero più tenue */
+    margin-right: 0.5em;
+}
+
+.tech {
+    background-color: #e0f7fa; /* Verde acqua molto chiaro come sfondo neutro */
+    color: #333; /* Nero più tenue */
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    margin-right: 0.3em;
+    border: 1px solid #b2ebf2; /* Bordo leggero in tono */
+}
+
+.challenge {
+    color: #000; /* Nero */
+    font-weight: bold;
+}
+
+.process-steps {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.process-steps li {
+    margin-bottom: 0.5em;
+}
+
+.step-number {
+    font-weight: bold;
+    color: #777; /* Grigio scuro */
+    margin-right: 0.5em;
+}
+
+.step-focus {
+    font-weight: bold;
+    color: #000; /* Nero */
+}
+
+.role-emphasis {
+    font-weight: bold;
+    color: #007bff; /* Blu */
+}
+
+.impact-emphasis {
+    font-style: italic;
+    color: #000; /* Nero */
+}
+
+.my-responsibilities {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.responsibility-item {
+    margin-bottom: 0.3em;
+    color: #000; /* Nero */
+}
+
+.emphasis {
+    font-weight: bold;
+    color: #000; /* Nero */
+}
+
+.improvement-area {
+    font-style: italic;
+    color: #777; /* Grigio scuro */
+}
+
+.strong-emphasis {
+    font-weight: bold;
+    color: #000; /* Nero */
+}
+
+.takeaways-list {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.takeaways-item {
+    margin-bottom: 0.3em;
+    color: #000; /* Nero */
+}
+
+.reflection-paragraph {
+    color: #000; /* Nero */
+    line-height: 1.6;
+}
+
+.feature-details-title {
+    font-weight: bold;
+    color: #333; /* Nero più tenue */
+    margin-top: 0.8em;
+}
+
+.feature-details-value {
+    color: #000; /* Nero */
+    line-height: 1.6;
+}
+
+.key-principle {
+    font-weight: bold;
+    color: #000; /* Nero */
+}
+
+/*===== PROJECT SECTION =====*/
+.project {
+    padding-top: 1rem;
+    /* Aumentato il padding superiore */
+    padding-bottom: 3rem;
+    /* Aumentato il padding inferiore */
+}
+
+.project__container {
+    row-gap: 2.5rem;
+    /* Leggermente aumentato il gap tra gli elementi */
+    padding: 3rem 0;
+    /* Aumentato il padding verticale */
+}
+
+.project__overview {
+    text-align: center;
+    margin-bottom: var(--mb-5);
+    /* Aumentato il margine inferiore */
+    padding: 2.5rem;
+    /* Aumentato il padding interno */
+    background-color: #f9f9f9;
+    /* Sfondo leggermente più chiaro */
+    border-radius: 0.75rem;
+    /* Bordo più arrotondato */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    /* Ombra più definita */
+}
+
+.img__container {
+    display: flex;
+    flex-direction: vertical;
+    justify-content: center;
+}
+
+.project__title {
+    font-size: 2.5rem;
+    /* Titolo più grande */
+    color: var(--second-color);
+    margin-bottom: var(--mb-3);
+    /* Aumentato il margine inferiore */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* Leggera ombra sul testo */
+}
+
+.project__description {
+    color: var(--text-color);
+    margin-bottom: var(--mb-4);
+    line-height: 1.7;
+    /* Interlinea leggermente maggiore */
+    font-size: 1.05rem;
+    /* Testo leggermente più grande */
+}
+
+.project__technologies {
+    color: #888;
+    /* Tonalità di grigio leggermente più chiara */
+    font-style: italic;
+    margin-bottom: var(--mb-5);
+    /* Aumentato il margine inferiore */
+    font-size: 0.95rem;
+    /* Testo leggermente più piccolo */
+}
+
+.project__detail-section {
+    margin-bottom: var(--mb-6);
+    /* Aumentato il margine inferiore */
+    padding: 2rem;
+    /* Aumentato il padding interno */
+    background-color: var(--white-color);
+    border-radius: 0.75rem;
+    /* Bordo più arrotondato */
+    border: 1px solid #eee;
+    /* Bordo sottile e chiaro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    /* Ombra più definita */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project__detail-section:hover {
+    transform: translateY(-3px);
+    /* Leggero sollevamento al passaggio del mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project__detail-title {
+    font-size: 1.75rem;
+    /* Titolo di sezione più grande */
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+    /* Aumentato il margine inferiore */
+}
+
+.project__detail-text {
+    color: var(--text-color);
+    line-height: 1.7;
+    /* Interlinea leggermente maggiore */
+    font-size: 1.05rem;
+    /* Testo leggermente più grande */
+}
+
+.project__back-button {
+    display: inline-block;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    padding: 0.9rem 2rem;
+    /* Padding leggermente maggiore */
+    border-radius: 0.6rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: var(--mb-5);
+    /* Aumentato il margine superiore */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project__back-button:hover {
+    background-color: hsl(var(--hue-color), 56%, 25%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/*===== FEATURE LIST =====*/
+.feature-list {
+    margin-bottom: 2em;
+    /* Aumentato il margine inferiore */
+}
+
+.feature-item {
+    margin-bottom: 1.5em;
+    /* Aumentato il margine inferiore */
+    padding: 1.75rem;
+    /* Aumentato il padding interno */
+    border-radius: 0.6rem;
+    background-color: #fefefe;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    /* Bordo leggermente più chiaro */
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    /* Titolo della feature leggermente più grande */
+    font-weight: bold;
+    color: var(--first-color);
+    margin-bottom: 0.8em;
+}
+
+.feature-details-title {
+    font-style: italic;
+    color: var(--text-color-light);
+    margin-bottom: 0.4em;
+    font-size: 0.95rem;
+    /* Testo leggermente più piccolo */
+}
+
+.feature-details-value {
+    margin-left: 0;
+    margin-bottom: 1em;
+    /* Aumentato il margine inferiore */
+    line-height: 1.7;
+    /* Interlinea leggermente maggiore */
+    font-size: 1.05rem;
+    /* Testo leggermente più grande */
+}
+
+/*===== SUMMARY =====*/
+.summary {
+    margin-top: 3em;
+    /* Aumentato il margine superiore */
+    font-size: 1.1rem;
+    /* Testo leggermente più grande */
+    line-height: 1.8;
+    /* Interlinea maggiore */
+    color: var(--second-color);
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: #000; /* Nero */
+}
+
+.summary strong {
+    color: var(--first-color);
+    font-weight: var(--font-semi);
+}
+
+/*===== REFLECTION SECTION =====*/
+.reflection-section {
+    margin-bottom: 2em;
+    /* Aumentato il margine inferiore */
+    padding: 2rem;
+    /* Aumentato il padding interno */
+    border-radius: 0.6rem;
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.reflection-title {
+    font-size: 1.5rem;
+    /* Titolo di sezione leggermente più grande */
+    font-weight: bold;
+    color: var(--first-color);
+    margin-bottom: 1.2em;
+    /* Aumentato il margine inferiore */
+}
+
+.reflection-paragraph {
+    line-height: 1.8;
+    /* Interlinea maggiore */
+    margin-bottom: 1.5em;
+    /* Aumentato il margine inferiore */
+    color: var(--text-color);
+    font-size: 1.05rem;
+    /* Testo leggermente più grande */
+}
+
+.takeaways-title {
+    font-size: 1.2rem;
+    /* Titolo dei takeaway leggermente più grande */
+    font-weight: bold;
+    color: #555;
+    margin-top: 1.8em;
+    /* Aumentato il margine superiore */
+    margin-bottom: 0.8em;
+    /* Aumentato il margine inferiore */
+}
+
+.takeaways-list {
+    list-style-type: disc;
+    padding-left: 30px;
+    /* Aumentato il padding a sinistra */
+}
+
+.takeaways-item {
+    margin-bottom: 1em;
+    /* Aumentato il margine inferiore */
+    line-height: 1.7;
+    /* Interlinea leggermente maggiore */
+    color: var(--text-color);
+    font-size: 1.05rem;
+    /* Testo leggermente più grande */
+}
+
+.strong-emphasis {
+    font-weight: bold;
+    color: var(--second-color);
+}

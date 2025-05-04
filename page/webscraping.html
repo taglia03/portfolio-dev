@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <link rel="stylesheet" href="../assets/css/project.css">
+        <title>Progetto - Web Scraper Airbnb</title>
+    </head>
+
+    <body>
+        <main class="l-main">
+            <section class="project section bd-grid">
+                <div class="project__container">
+                    <section class="project__overview">
+                        <h1 class="project__title">Progetto - Web Scraper Airbnb</h1>
+                        <p class="project__description">
+                            La mia <span class="highlight">soluzione personalizzata</span> per la ricerca dell'alloggio
+                            estivo perfetto! Questo <span class="highlight">web scraper automatizzato</span> analizza le pagine di ricerca di Airbnb,
+                            estraendo e organizzando i dati chiave in <span class="benefit">tabelle intuitive</span>. Ho trasformato ore di
+                            navigazione in un <span class="benefit">confronto rapido ed efficiente</span> di innumerevoli annunci, ottimizzando la
+                            scelta per la mia vacanza.
+                        </p>
+                        <p class="project__technologies">
+                            <span class="tech-label">Tecnologie utilizzate:</span>
+                            <span class="tech">Streamlit</span> (<span class="tech-detail">Frontend - Python</span>),
+                            <span class="tech">Python</span> (<span class="tech-detail">Backend</span>),
+                            <span class="tech">BeautifulSoup4</span> (<span class="tech-detail">Web Scraping</span>),
+                            <span class="tech">Requests</span> (<span class="tech-detail">HTTP</span>),
+                            <span class="tech">Pandas</span> (<span class="tech-detail">Gestione Dati</span>)
+                        </p>
+                        <div class="img__container">
+                            <img src="../assets/img/Web-scraping-cose-e-a-cosa-serve.jpg"
+                                alt="Interfaccia utente del Web Scraper Airbnb che mostra una tabella di annunci.">
+                        </div>
+                    </section>
+            
+                    <article class="project__detail-section">
+                        <h2 class="project__detail-title">Obiettivi e Sfide</h2>
+                        <div class="project__detail-text">
+                            <p>
+                                L'obiettivo primario di questo progetto era <span class="highlight">automatizzare l'estrazione di informazioni rilevanti</span> dagli annunci di Airbnb utilizzando la libreria BeautifulSoup4.
+                            </p>
+                            <p>
+                                Una <span class="challenge">sfida cruciale</span> è stata la gestione delle potenziali variazioni nella struttura delle pagine web di Airbnb e l'implementazione di <span class="challenge">meccanismi robusti per la gestione degli errori</span> durante il processo di scraping.
+                            </p>
+                            <p>
+                                Un ulteriore obiettivo era presentare i dati estratti in modo <span class="benefit">chiaro e accessibile</span> tramite l'interfaccia utente creata con Streamlit, facilitando il <span class="benefit">confronto tra un gran numero di annunci</span>.
+                            </p>
+                        </div>
+                    </article>
+            
+                    <article class="project__detail-section">
+                        <h2 class="project__detail-title">Il Mio Ruolo</h2>
+                        <div class="project__detail-text">
+                            <p>In questo progetto, ho agito come <span class="role-emphasis">unico sviluppatore</span>, assumendomi la <span class="role-emphasis">piena responsabilità di ogni fase</span>.</p>
+                            <p>Ciò ha incluso la <span class="responsibility-item"><strong>pianificazione e la progettazione</strong> dello scraper</span>,
+                                l'<span class="responsibility-item"><strong>implementazione del backend in Python</strong></span> con le librerie BeautifulSoup4, Requests e Pandas, e
+                                la <span class="responsibility-item"><strong>creazione dell'interfaccia utente interattiva</strong></span> utilizzando Streamlit.
+                            </p>
+                            <p>Ho curato l'<span class="responsibility-item"><strong>intero flusso di lavoro</strong></span>, dall'acquisizione dei dati alla loro presentazione finale, garantendo la <span class="emphasis">funzionalità e l'usabilità dell'applicazione</span>.</p>
+                        </div>
+                    </article>
+            
+                    <article class="project__detail-section">
+                        <h2 class="project__detail-title">Funzionalità Chiave</h2>
+                        <div class="project__detail-text">
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <h3 class="feature-title">Scraping Multi-Pagina</h3>
+                                    <p class="feature-details-title">Come funziona:</p>
+                                    <p class="feature-details-value">Il sistema è in grado di <span class="emphasis">navigare e analizzare automaticamente più pagine</span> di risultati di ricerca su Airbnb.</p>
+                                    <p class="feature-details-title">Valore per l'utente:</p>
+                                    <p class="feature-details-value">Permette di considerare un <span class="benefit-inline">numero maggiore di annunci</span> senza la necessità di navigare manualmente tra le pagine, <span class="benefit-inline">risparmiando tempo</span>.</p>
+                                </div>
+            
+                                <div class="feature-item">
+                                    <h3 class="feature-title">Estrazione Dati Chiave</h3>
+                                    <p class="feature-details-title">Come funziona:</p>
+                                    <p class="feature-details-value">Lo scraper <span class="emphasis">identifica ed estrae informazioni cruciali</span> dagli annunci, come il prezzo, il titolo, la posizione e altre caratteristiche rilevanti.</p>
+                                    <p class="feature-details-title">Valore per l'utente:</p>
+                                    <p class="feature-details-value">Fornisce rapidamente i <span class="benefit-inline">dati più importanti per la valutazione degli annunci</span>, facilitando il confronto.</p>
+                                </div>
+            
+                                <div class="feature-item">
+                                    <h3 class="feature-title">Presentazione Tabellare (Streamlit)</h3>
+                                    <p class="feature-details-title">Come funziona:</p>
+                                    <p class="feature-details-value">I dati estratti vengono <span class="emphasis">organizzati e visualizzati in tabelle chiare e interattive</span> tramite l'interfaccia utente creata con Streamlit.</p>
+                                    <p class="feature-details-title">Valore per l'utente:</p>
+                                    <p class="feature-details-value">Rende i dati <span class="benefit-inline">facilmente leggibili e confrontabili</span>, consentendo agli utenti di individuare rapidamente le informazioni desiderate.</p>
+                                </div>
+            
+                                <div class="feature-item">
+                                    <h3 class="feature-title">Confronto Facilitato</h3>
+                                    <p class="feature-details-title">Come funziona:</p>
+                                    <p class="feature-details-value">L'interfaccia utente è progettata per permettere agli utenti di <span class="emphasis">confrontare facilmente gli annunci</span> in base a diversi parametri come prezzo e qualità.</p>
+                                    <p class="feature-details-title">Valore per l'utente:</p>
+                                    <p class="feature-details-value">Semplifica il processo decisionale, aiutando gli utenti a identificare rapidamente gli annunci con il <span class="benefit-inline">miglior rapporto qualità-prezzo</span>.</p>
+                                </div>
+            
+                                <div class="feature-item">
+                                    <h3 class="feature-title">Ottimizzazione Ricerca</h3>
+                                    <p class="feature-details-title">Come funziona:</p>
+                                    <p class="feature-details-value">L'automazione del processo di scraping e la presentazione organizzata dei dati <span class="emphasis">riducono significativamente il tempo necessario per la ricerca di alloggi</span>.</p>
+                                    <p class="feature-details-title">Valore per l'utente:</p>
+                                    <p class="feature-details-value">Consente agli utenti di trovare l'alloggio ideale in modo <span class="benefit-inline">più rapido ed efficiente</span>, <span class="benefit-inline">risparmiando tempo e sforzi</span>.</p>
+                                </div>
+                            </div>
+            
+                            <p class="summary"><strong>In sintesi,</strong> il web scraper Airbnb offre funzionalità chiave per semplificare la ricerca di alloggi. Lo <span class="key-benefit">scraping multi-pagina</span> e l'<span class="key-benefit">estrazione di dati chiave</span> automatizzano la raccolta delle informazioni, mentre la <span class="key-benefit">presentazione tabellare</span> e il <span class="key-benefit">confronto facilitato</span> rendono l'analisi dei risultati intuitiva ed efficiente, <span class="key-benefit">ottimizzando così l'intero processo di ricerca</span>.</p>
+                        </div>
+                    </article>
+            
+                    <article class="project__detail-section">
+                        <h2 class="project__detail-title">Apprendimenti e Riflessioni</h2>
+                        <div class="project__detail-text">
+                            <p class="reflection-paragraph">Questo progetto di web scraping su Airbnb mi ha fornito preziose competenze nel recupero e nell'elaborazione di dati web. Ho approfondito la mia conoscenza delle librerie Python per il web scraping come BeautifulSoup4 e per la gestione di richieste HTTP con Requests. La gestione delle eccezioni e delle diverse strutture delle pagine web è stata una <span class="challenge">sfida stimolante</span> che mi ha insegnato l'<span class="emphasis">importanza di un approccio flessibile e resiliente</span>. L'utilizzo di Streamlit per la creazione dell'interfaccia utente mi ha mostrato quanto sia <span class="emphasis">semplice e potente creare applicazioni web interattive in Python</span>. Riflettendo sul processo, potrei esplorare in futuro tecniche di scraping più avanzate per gestire siti web dinamici con JavaScript.</p>
+            
+                            <h4 class="takeaways-title">Principali Takeaway</h4>
+                            <ul class="takeaways-list">
+                                <li class="takeaways-item"><span class="strong-emphasis">Web Scraping Efficace:</span> Strumento potente per l'estrazione e l'analisi di dati online.</li>
+                                <li class="takeaways-item"><span class="strong-emphasis">Python per Data Scraping:</span> Librerie BeautifulSoup4, Requests e Pandas per manipolazione dati.</li>
+                                <li class="takeaways-item"><span class="strong-emphasis">Gestione Errori Web Scraping:</span> Adattabilità cruciale a modifiche nei siti web.</li>
+                                <li class="takeaways-item"><span class="strong-emphasis">Streamlit per UI Data Science:</span> Creazione rapida di interfacce interattive.</li>
+                                <li class="takeaways-item"><span class="strong-emphasis">Soluzione Pratica:</span> Strumento che risolve la ricerca efficiente di alloggi online.</li>
+                            </ul>
+                        </div>
+                    </article>
+            
+                    <a href="/#projects" class="project__back-button">Torna ai Progetti</a>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
